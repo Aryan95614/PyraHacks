@@ -13,7 +13,7 @@ while True:
     iphone_or_Android = None
     ios = None
 
-    type = ('Do you have an iphone or android?[Iphone][Android]: \t')
-    ios = ('What is the ios of the software: \t')
+    type = input('Do you have an iphone or android?[Iphone][Android]: \t')
+    ios = input('What is the ios of the software: \t')
     Phone = phone(iphone_or_Android=iphone_or_Android, ios=ios)
     Phone.identify()
