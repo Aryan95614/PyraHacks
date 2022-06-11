@@ -12,3 +12,8 @@ while True:
 
     if balence > 30:
         print('You lose!')
+        break
+
+    if balence == 30:
+        print('You Win!')
+        break
