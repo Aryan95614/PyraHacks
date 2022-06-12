@@ -1,3 +1,5 @@
+from time import sleep
+
 class phone:
 
     def __init__(self, iphone_or_Android, ios ):
@@ -8,12 +10,15 @@ class phone:
         print(f'This is an {self.phoneType} and the ios of it is {self.ios}')
         if self.phoneType == 'Iphone':
             print('Do you know that Apple is the largest software and hardware based company!')
-            print('The Latest iphones come with the latest embedded software and reinforced with cutting edge tech!')
-            print('Moreover, the tech in the iphone is unparrelled due to its distinction within the os market.')
+            sleep(1)
+            print('The Latest iphones come with the latest embedded software and reinforced with cutting edge tech!');sleep(1)
+            print('Moreover, the tech in the iphone is unparrelled due to its distinction within the os market.');sleep(1)
+            print('Fun Fact: Steve Jobs when publicising the IPOD, had a version which broke down, he improvised and saved his company');sleep(1)
         if self.phoneType == 'Android':
-            print(' The Android is the direct competitor to the Iphone and has the latest software by google!')
-            print(' Android encompasses many phones from companies, furthermore, each of them improve the hardware and')
-            print(' Software as much as they can, it really is impressive to know that even the top 100 companies are collabing')
+            print(' The Android is the direct competitor to the Iphone and has the latest software by google!');sleep(1)
+            print(' Android encompasses many phones from companies, furthermore, each of them improve the hardware and');sleep(1)
+            print(' Software as much as they can, it really is impressive to know that even the top 100 companies are collabing');sleep(1)
+            print("Fun Fact: Samsung started of as a company not in tech, but the fascination brought them to make products. Isn't that amazing");sleep(1)
 
 
 List = []
@@ -26,4 +31,3 @@ while True:
     Phone = phone(iphone_or_Android=type, ios=ios)
     Phone.identify()
     List.append(Phone)
-    print(List)
