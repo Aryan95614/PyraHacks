@@ -4,7 +4,7 @@ import sys
 while True:
     print('\n------------------This gives links: ------------')
 
-    choices = input('Do you like Comedy[1], Horror[2], Thriller[3], Popular[4], Special[5], Quit[6]')
+    choices = int(input('Do you like Comedy[1], Horror[2], Thriller[3], Popular[4], Special[5], Quit[6]:\t'))
 
     special = ['https://www.youtube.com/watch?v=g4SjaZb1AIM', 'https://www.youtube.com/watch?v=B_tTymvDWXk', 'https://www.youtube.com/watch?v=3Yd7ocEaZYc', 'https://www.youtube.com/watch?v=FIjV5mWBFUw', 'https://www.youtube.com/watch?v=ykpWl-gXZ6s']
     if choices == 1:
