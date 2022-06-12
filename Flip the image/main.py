@@ -6,11 +6,11 @@ win = pygame.display.set_mode((512, 512))
 gameover = False
 
 image = pygame.image.load(os.path.join('assets', 'geometric.png'))
-x = 0
+
 
 while not gameover:
     win.fill((0, 0, 0))
-    win.blit(image, ((0-x), 0+x))
+    win.blit(image, (0, 0)
     keys = pygame.key.get_pressed()
 
     for events in pygame.event.get():
