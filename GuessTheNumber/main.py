@@ -3,7 +3,7 @@ import sys
 
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 score = 5
-
+thing = False
 while True:
     Random = choice(numbers)
     thing = int(input(f'Hello, a random number was chosen, please type in a number, your score is {score}:\t'))
@@ -14,6 +14,7 @@ while True:
     else:
         print(f'You lose, your score is {score}')
 
-    if score == 5:
+    if score == 5 and not thing:
+        thing = True
         print('Congrats, now the other part of the game, now you can select the numbers, split by comma:\t')
         numbers = input(' Numbers: \t').split(', ')
